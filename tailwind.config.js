@@ -3,6 +3,7 @@
 /** @type {import("@types/tailwindcss/tailwind-config").TailwindConfig } */
 module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
+  darkMode: "class",
   theme: {
     extend: {
       fontFamily: {
@@ -12,7 +13,14 @@ module.exports = {
         green: {
           DEFAULT: "#00f260",
         },
-        dark: "#222222",
+        dark: {
+          DEFAULT: "#010101",
+          100: "#0a0b1e",
+          200: "#16181d",
+          300: "#0f1115",
+          500: "#0f1115",
+          700: "#202125",
+        },
       },
       keyframes: {
         flicker: {

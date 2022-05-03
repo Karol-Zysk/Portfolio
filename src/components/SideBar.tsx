@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import { useRouter } from 'next/router';
+import { useTheme } from 'next-themes';
 import React from 'react';
 import { AiFillGithub } from 'react-icons/ai';
 import { GiTie } from 'react-icons/gi';
@@ -8,9 +9,15 @@ import { GoLocation } from 'react-icons/go';
 import photo from '../img/photo.jpg';
 
 const SideBar = () => {
+  const { theme, setTheme } = useTheme();
   const router = useRouter();
+
+  const changeTheme = () => {
+    setTheme(theme === 'light' ? 'dark' : 'light');
+    console.log('Działa');
+  };
   return (
-    <div>
+    <div className='dark:bg-black'>
       <Image
         src={photo}
         alt='avatar'
@@ -21,14 +28,14 @@ const SideBar = () => {
       </h3>
       <p
         className='my-3 rounded-full
-      bg-gray-200 px-2 py-1'
+      bg-gray-200 px-2 py-1 dark:bg-dark-200 '
       >
         Junior Frontend Developer
       </p>
       <p>
         <a
           className='my-3 flex
-      items-center justify-center rounded-full bg-gray-200 px-2 py-1 '
+      items-center justify-center rounded-full bg-gray-200 px-2 py-1 dark:bg-dark-200 '
           href='#'
           download='name'
         >
@@ -50,7 +57,7 @@ const SideBar = () => {
       </div>
       {/* //adress */}
       <div
-        className='my-5 bg-gray-200 py-4 '
+        className='dark:bg-black-500 my-5 bg-gray-200 py-4 dark:bg-dark-200 '
         style={{ marginLeft: '-1rem', marginRight: '-1rem' }}
       >
         <div className='flex items-center justify-center space-x-2'>
@@ -59,17 +66,20 @@ const SideBar = () => {
         </div>
         <p className='my-2'>zysk.karol.pawel@gmail.com</p>
         <p className='my-2'>518-201-934</p>
-        <button
-          type='button'
-          onClick={() => router.push('mailto:email@gmail.com')}
-          className='my-2 w-8/12 rounded-full bg-gradient-to-r from-green to-blue-400 py-2 px-5  text-white focus:outline-none'
-        >
-          Email Me
-        </button>
-        <button className='my-2 w-8/12 rounded-full bg-gradient-to-r from-green to-blue-400 py-2 px-5  text-white'>
-          Toggle Theme
-        </button>
       </div>
+      <button
+        type='button'
+        onClick={() => router.push('mailto:email@gmail.com')}
+        className='my-2 w-8/12 rounded-full bg-gradient-to-r from-green to-blue-400 py-2 px-5  text-white focus:outline-none'
+      >
+        Email Me
+      </button>
+      <button
+        onClick={changeTheme}
+        className='my-2 w-8/12 rounded-full bg-gradient-to-r from-green to-blue-400 py-2 px-5  text-white'
+      >
+        Toggle Theme
+      </button>
     </div>
   );
 };
