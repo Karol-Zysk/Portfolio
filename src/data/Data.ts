@@ -47,33 +47,33 @@ export const services: Service[] = [
 export const languages: Skill[] = [
   {
     Icon: BsCircleFill,
-    name: 'Python',
-    level: '45%',
-  },
-  {
-    Icon: BsCircleFill,
-    name: 'Java Script',
+    name: 'JavaScript',
     level: '60%',
   },
   {
     Icon: BsCircleFill,
-    name: 'React Native',
-    level: '80%',
-  },
-  {
-    Icon: BsCircleFill,
     name: 'React',
-    level: '70%',
+    level: '60%',
   },
   {
     Icon: BsCircleFill,
-    name: 'Django',
-    level: '80%',
+    name: 'TypeScript',
+    level: '50%',
   },
   {
     Icon: BsCircleFill,
-    name: 'Bootstrap',
-    level: '80%',
+    name: 'NodeJS',
+    level: '30%',
+  },
+  {
+    Icon: BsCircleFill,
+    name: 'MongoDB',
+    level: '35%',
+  },
+  {
+    Icon: BsCircleFill,
+    name: 'NextJS',
+    level: '30%',
   },
 ];
 

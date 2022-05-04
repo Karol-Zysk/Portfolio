@@ -1,3 +1,5 @@
+import { routeAnimation } from 'animations';
+import { motion } from 'framer-motion';
 import React from 'react';
 
 import { languages, tools } from '@/data/Data';
@@ -5,10 +7,28 @@ import { languages, tools } from '@/data/Data';
 import Bar from '@/components/Bar/Bar';
 
 const Resume = () => {
+  const variants = {
+    initial: {
+      opacity: 0,
+      y: 60,
+    },
+    animate: {
+      opacity: 1,
+      y: 0,
+      transition: { duration: 500, type: 'spring', damping: 10, stifness: 100 },
+    },
+  };
+
   return (
-    <div className='px-6 py-2'>
+    <motion.div
+      variants={routeAnimation}
+      initial='initial'
+      animate='animate'
+      exit='exit'
+      className='px-6 py-2'
+    >
       <div className='grid gap-6 md:grid-cols-2'>
-        <div>
+        <motion.div variants={variants} initial='initial' animate='animate'>
           <h5 className='my-3 text-2xl font-bold'>Education</h5>
           <div className=''>
             <h5 className='my-2 text-xl font-bold'>
@@ -20,15 +40,15 @@ const Resume = () => {
               from Academy of Technology
             </p>
           </div>
-        </div>
-        <div>
+        </motion.div>
+        <motion.div variants={variants} initial='initial' animate='animate'>
           <h5 className='my-3 text-2xl font-bold'>Experience</h5>
           <div className=''>
             <h5 className='my-2 text-xl font-bold'>Software Developer Jr.</h5>
             <p className='font-semibold'>Tata Consultancy Services</p>
             <p className='my-3'>I dont know why I am doing this job</p>
           </div>
-        </div>
+        </motion.div>
       </div>
 
       {/*Languages & Tools */}
@@ -51,7 +71,7 @@ const Resume = () => {
           </div>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

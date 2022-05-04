@@ -1,3 +1,5 @@
+import { fadeInUp, stagger, staggerOpacity } from 'animations';
+import { motion } from 'framer-motion';
 import Image from 'next/image';
 import React, { FunctionComponent, useState } from 'react';
 import { AiFillGithub, AiFillProject } from 'react-icons/ai';
@@ -33,16 +35,28 @@ const ProjectCard: FunctionComponent<{
       <p className='my-2 text-center'>{name}</p>
 
       {showDetail && (
-        <div className='absolute top-0 left-0 z-10 grid h-auto w-full gap-x-12 bg-gray-100 p-2 text-black dark:bg-dark-400 dark:text-white md:grid-cols-2'>
-          <div>
-            <Image
-              src={image_path}
-              alt={name}
-              layout='responsive'
-              height='150'
-              width='300'
-            />
-            <div className='my-4  flex justify-center space-x-3'>
+        <div className='absolute top-0 left-0 z-10 grid h-full w-full gap-x-12 rounded-lg bg-gray-100 p-2 text-black opacity-95 dark:bg-dark-400 dark:text-white md:grid-cols-2 md:p-12'>
+          <motion.div
+            variants={staggerOpacity}
+            initial='initial'
+            animate='animate'
+          >
+            <motion.div
+              className='rounded-lg border-4 border-gray-600'
+              variants={fadeInUp}
+            >
+              <Image
+                src={image_path}
+                alt={name}
+                layout='responsive'
+                height='150'
+                width='300'
+              />
+            </motion.div>
+            <motion.div
+              variants={fadeInUp}
+              className='my-4  flex justify-center space-x-3'
+            >
               <a
                 href={github_url}
                 className='flex items-center space-x-3 bg-gray-200 px-4 py-2 text-lg dark:bg-dark-200'
@@ -51,18 +65,28 @@ const ProjectCard: FunctionComponent<{
               </a>
               <a
                 href={deployed_url}
-                className='flex items-center space-x-3 bg-gray-200 px-4 py-2 text-lg dark:bg-dark-200'
+                className='flex items-center space-x-3  bg-gray-200 px-4 py-2 text-lg dark:bg-dark-200'
               >
                 <AiFillProject /> <span>Project</span>
               </a>
-            </div>
-          </div>
+            </motion.div>
+          </motion.div>
 
-          <div>
-            <h2 className='mb-3 text-xl font-medium md:text-2xl'>{name}</h2>
-            <h3 className='mb-3 font-medium'>{description}</h3>
+          <motion.div variants={stagger} initial='initial' animate='animate'>
+            <motion.h2
+              variants={fadeInUp}
+              className='mb-3 text-xl font-medium  md:text-2xl'
+            >
+              {name}
+            </motion.h2>
+            <motion.h3 variants={fadeInUp} className='mb-3 font-medium'>
+              {description}
+            </motion.h3>
 
-            <div className='mt-5 flex flex-wrap space-x-2 text-sm tracking-wider'>
+            <motion.div
+              variants={fadeInUp}
+              className='mt-5 flex flex-wrap space-x-2 text-sm tracking-wider'
+            >
               {key_techs.map((tech) => (
                 <span
                   key={tech}
@@ -71,12 +95,12 @@ const ProjectCard: FunctionComponent<{
                   {tech}
                 </span>
               ))}
-            </div>
-          </div>
+            </motion.div>
+          </motion.div>
 
           <button
             onClick={() => setShowDetail(false)}
-            className='absolute top-3 right-3 rounded-full bg-gray-200 p-1 focus:outline-none dark:bg-dark-200'
+            className='absolute top-3 right-3 rounded-full bg-gray-200 p-1 focus:outline-none  dark:bg-dark-200'
           >
             <MdClose size={30} />
           </button>
