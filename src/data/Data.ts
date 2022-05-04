@@ -106,8 +106,8 @@ export const projects: IProject[] = [
     description:
       'This app shows a statistical view about corona virus over the world',
     image_path: '/images/maps.png',
-    deployed_url: 'https://covid-19-tracker-by-sumit.web.app/',
-    github_url: 'https://github.com/Dey-Sumit/covid-19-tracker',
+    deployed_url: 'https://admirable-mochi-c1e6c8.netlify.app/',
+    github_url: 'https://github.com/Karol-Zysk/React-Jurney',
     category: ['React', 'Typescript'],
     key_techs: [
       'React',
@@ -120,8 +120,8 @@ export const projects: IProject[] = [
   {
     name: 'Strength Bible',
     image_path: '/images/sb.png',
-    deployed_url: 'https://visual-algorithm.web.app/',
-    github_url: 'https://github.com/Dey-Sumit/algorithm-visualizer',
+    deployed_url: 'https://romantic-ardinghelli-a492fd.netlify.app',
+    github_url: 'https://github.com/Karol-Zysk/Strenght-Training-Atlas',
     category: ['React', 'MongoDB', 'Node'],
     description:
       'An web app which shows how an algorithm (path finding or sorting) works with cool animation',
@@ -140,8 +140,8 @@ export const projects: IProject[] = [
   {
     name: 'Kurpie Page',
     image_path: '/images/Kurpie.png',
-    deployed_url: 'https://dev-talks.herokuapp.com/',
-    github_url: 'https://github.com/Dey-Sumit/Dev-talks',
+    deployed_url: 'https://euphonious-tanuki-81762a.netlify.app/',
+    github_url: 'https://github.com/Karol-Zysk/Kurpie.com',
     category: ['React'],
     description:
       'Social Media app for developers who can share project,create posts,etc...',
@@ -157,8 +157,8 @@ export const projects: IProject[] = [
   {
     name: 'E-comerce',
     image_path: '/images/ecomerce.png',
-    deployed_url: 'https://sumit-chat.netlify.app/',
-    github_url: 'https://github.com/Dey-Sumit/chat-app-socket.io-react-node',
+    deployed_url: 'https://incredible-macaron-c5e6b1.netlify.app/',
+    github_url: 'https://github.com/Karol-Zysk/E-Comerce',
     category: ['React', 'Node', 'MongoDB'],
     description:
       'Basic Realtime Chat App where one can create a room can talk to each other',
@@ -176,8 +176,8 @@ export const projects: IProject[] = [
   {
     name: 'IT Quiz',
     image_path: '/images/quiz.png',
-    deployed_url: 'http://sumaxtweetme.pythonanywhere.com/',
-    github_url: 'https://github.com/Dey-Sumit/tweetme',
+    deployed_url: 'https://stellar-basbousa-9e821f.netlify.app/',
+    github_url: 'https://github.com/Karol-Zysk/React-Typescript-QUIZ--learning',
     category: ['React', 'Typescript'],
     description:
       'First Django Project :) | Typical Social Media App where one can post,like ,comment etc',
@@ -187,18 +187,28 @@ export const projects: IProject[] = [
   {
     name: 'SmallGym',
     image_path: '/images/smallgym.png',
-    deployed_url: '!#',
-    github_url: 'https://github.com/Dey-Sumit/color-classification',
+    deployed_url: 'https://inquisitive-scone-a3752c.netlify.app/',
+    github_url: 'https://github.com/Karol-Zysk/small-gym',
     category: ['React'],
     description:
       'Tried ML with JS :) | this app classifies a color using CNN algorithm in browser',
     key_techs: ['React', 'Styled-Components', 'React-Router'],
   },
   {
+    name: 'AgeOfEmpires unit Calculator',
+    image_path: '/images/aoe.png',
+    deployed_url: 'https://dancing-sprite-c7b78c.netlify.app/',
+    github_url: 'https://github.com/Karol-Zysk/Wololo-AoE',
+    category: ['React'],
+    description:
+      'Tried ML with JS :) | this app classifies a color using CNN algorithm in browser',
+    key_techs: ['React', 'Styled-Components', 'REST API'],
+  },
+  {
     name: "Kaja's Vocabulary",
     image_path: '/images/vocab.png',
-    deployed_url: 'https://not-utube.web.app/',
-    github_url: 'https://github.com/Dey-Sumit/youtube-clone-tutorial-up',
+    deployed_url: 'https://mystifying-neumann-8a322b.netlify.app/',
+    github_url: 'https://github.com/Karol-Zysk/Vocabulary-GIT',
     category: ['JavaScript'],
     description:
       'Full(almost) Functional YouTube replica where one can login with his/her youtube account to enjoy "not-YouTube".User can like a video,comment on a video & Much More ',
@@ -207,8 +217,8 @@ export const projects: IProject[] = [
   {
     name: 'Astro',
     image_path: '/images/astro.png',
-    deployed_url: 'https://o-my-goal.web.app/',
-    github_url: 'https://github.com/Dey-Sumit/football-app',
+    deployed_url: 'https://pensive-elion-2a1fee.netlify.app/',
+    github_url: 'https://github.com/Karol-Zysk/Astro-Stats',
     category: ['JavaScript'],
     description:
       'o my goal replica where an user can keep an eye on his favorite club.This app will keep providing \n all the statistics of that club.all the fans can also chat ',

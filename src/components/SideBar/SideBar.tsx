@@ -5,7 +5,7 @@ import { AiFillGithub } from 'react-icons/ai';
 import { GiTie } from 'react-icons/gi';
 import { GoLocation } from 'react-icons/go';
 
-import photo from '../../img/photo.jpg';
+import photo from '../../images/photo.jpg';
 
 const SideBar = () => {
   const { theme, setTheme } = useTheme();
@@ -23,7 +23,7 @@ const SideBar = () => {
         width='128px'
         layout='intrinsic'
         quality='100'
-      ></Image>
+      />
       <h3 className='my-3 font-kaushan text-3xl font-medium'>
         <span>Karol </span>Zyśk
       </h3>

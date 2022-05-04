@@ -7,7 +7,7 @@ const Bar: FunctionComponent<{ data: Skill }> = ({
   return (
     <div className=' my-3 rounded-full bg-gray-300 text-white dark:bg-dark-200 '>
       <div
-        className='flex items-center rounded-full  bg-gradient-to-r from-green to-blue-600 px-4 py-2'
+        className='flex items-center rounded-full  bg-gradient-to-r from-green to-blue-600 px-4 py-1'
         style={{ width: level }}
       >
         <Icon className='mr-3' />
