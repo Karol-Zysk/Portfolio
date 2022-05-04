@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { languages, tools } from '@/data/aboutData';
+import { languages, tools } from '@/data/Data';
 
 import Bar from '@/components/Bar/Bar';
 
@@ -34,15 +34,15 @@ const resume = () => {
       <div className='grid gap-3 md:grid-cols-2'>
         <div>
           <h5 className='my-3 text-2xl font-bold'>Languages & Frameworks</h5>
-          <div className='my-2'>
+          <div className='my-2 py-4'>
             {languages.map((language) => (
               <Bar data={language} key={language.name} />
             ))}
           </div>
         </div>
         <div>
-          <h5 className='my-3 text-2xl font-bold'>Tools & Softwares</h5>
-          <div className='my-2'>
+          <h5 className='my-3  text-2xl font-bold'>Tools & Softwares</h5>
+          <div className='my-2 py-4'>
             {tools.map((tool) => (
               <Bar data={tool} key={tool.name} />
             ))}

@@ -3,7 +3,7 @@ import * as React from 'react';
 
 import ServiceCard from '@/components/ServiceCard/ServiceCard';
 
-import { services } from '../data/aboutData';
+import { services } from '../data/Data';
 
 // import { services } from '@/data/aboutData';
 
@@ -15,7 +15,7 @@ const index = () => {
         and <b>React.js</b>{' '}
       </h5>
       <div
-        className='mt-5 flex-grow bg-gray-400 p-4'
+        className='mt-5 flex-grow bg-gray-400 p-4 dark:bg-dark-100'
         style={{ marginLeft: '-1.5rem', marginRight: '-1.5rem' }}
       >
         <h6 className='my-3 text-xl font-bold tracking-wide'>What I Offer</h6>
@@ -23,7 +23,7 @@ const index = () => {
           {services.map((service) => (
             <div
               key={Math.random()}
-              className='overflow-hidden rounded-lg bg-gray-200 lg:col-span-1'
+              className='overflow-hidden rounded-lg bg-gray-200 dark:bg-dark-200 lg:col-span-1'
             >
               <ServiceCard service={service} />
             </div>
