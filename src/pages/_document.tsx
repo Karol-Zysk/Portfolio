@@ -1,7 +1,5 @@
 import Document, { Head, Html, Main, NextScript } from 'next/document';
 
-
-
 class MyDocument extends Document {
   render() {
     return (
@@ -13,6 +11,11 @@ class MyDocument extends Document {
             href='https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Ubuntu:wght@300&display=swap'
             rel='stylesheet'
           />
+          <meta
+            name='description'
+            content='Page of Frontend Developer Wannabe'
+          />
+          <meta name='keywords' content=' Frontend Developer Portfolio' />
         </Head>
         <body className='bg-gradient-to-r from-green to-blue-600 dark:from-dark-500 dark:to-dark-700 dark:text-white'>
           <Main />

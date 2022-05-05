@@ -1,5 +1,6 @@
 import { fadeInUp, routeAnimation, stagger } from 'animations';
 import { motion } from 'framer-motion';
+import Head from 'next/head';
 import { useState } from 'react';
 import { Category } from 'type';
 
@@ -25,9 +26,17 @@ const Projects = () => {
   };
 
   return (
-    <motion.div variants={routeAnimation}
-    initial='initial'
-    animate='animate' exit="exit" className='overflow-y-scroll px-5 py-2' style={{ height: '65vh' }}>
+    <motion.div
+      variants={routeAnimation}
+      initial='initial'
+      animate='animate'
+      exit='exit'
+      className='overflow-y-scroll px-5 py-2'
+      style={{ height: '65vh' }}
+    >
+      <Head>
+        <title>Frontend Developer | projects |Karol Zyśk</title>
+      </Head>
       <ProjectsNavbar
         handlerFilterCategory={handlerFilterCategory}
         active={active}

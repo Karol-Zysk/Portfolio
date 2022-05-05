@@ -1,6 +1,7 @@
 import { fadeInUp, routeAnimation, stagger } from 'animations';
 import { motion } from 'framer-motion';
 import { GetStaticPropsContext, NextPage } from 'next';
+import Head from 'next/head';
 import * as React from 'react';
 
 import ServiceCard from '@/components/ServiceCard/ServiceCard';
@@ -18,6 +19,9 @@ const About: NextPage = () => {
       animate='animate'
       exit='exit'
     >
+      <Head>
+        <title>Frontend Developer | portfolio |Karol Zyśk</title>
+      </Head>
       <h5 className='my-3 text-lg font-medium'>
         Frontend Developer with a passion to Create and a willingness to Learn{' '}
       </h5>

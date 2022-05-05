@@ -49,6 +49,7 @@ const SideBar = () => {
 
         <div className='my-5 mx-auto flex w-9/12 justify-around   text-green md:w-full'>
           <a
+            aria-label='Github'
             href='https://github.com/Karol-Zysk/'
             className='text-md flex  items-center rounded-3xl border-2 border-green py-1 px-2 duration-100 ease-linear hover:scale-105 '
           >
