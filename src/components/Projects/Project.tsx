@@ -35,7 +35,7 @@ const ProjectCard: FunctionComponent<{
       <p className='my-2 text-center'>{name}</p>
 
       {showDetail && (
-        <div className='absolute top-0 left-0 z-10 grid h-full w-full gap-x-12 rounded-lg bg-gray-100 p-2 text-black opacity-95 dark:bg-dark-400 dark:text-white md:grid-cols-2 md:p-12'>
+        <div className='fixed top-0 left-0 z-10 grid w-full gap-x-12 rounded-lg bg-gray-100 p-2 text-black opacity-95 dark:bg-dark-400 dark:text-white sm:h-auto md:absolute md:h-full md:grid-cols-2 md:p-12'>
           <motion.div
             variants={staggerOpacity}
             initial='initial'
