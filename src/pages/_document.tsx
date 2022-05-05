@@ -17,7 +17,7 @@ class MyDocument extends Document {
           />
           <meta name='keywords' content=' Frontend Developer Portfolio' />
         </Head>
-        <body className='bg-gradient-to-r from-green to-blue-600 dark:from-dark-500 dark:to-dark-700 dark:text-white'>
+        <body className='bg-gradient-to-r from-violet to-blue-600 dark:from-dark-500 dark:to-dark-700 dark:text-white'>
           <Main />
           <NextScript />
         </body>

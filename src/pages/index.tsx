@@ -24,7 +24,7 @@ const About: NextPage = () => {
         Frontend Developer with a passion to Create and a willingness to Learn{' '}
       </h5>
       <div
-        className='mt-5 flex-grow bg-gradient-to-r from-gray-300 to-gray-100  p-4 dark:from-dark-100 dark:to-dark-200'
+        className='mt-4 flex-grow bg-gradient-to-r from-gray-300 to-gray-100  p-4 dark:from-dark-100 dark:to-dark-200'
         style={{ marginLeft: '-1.5rem', marginRight: '-1.5rem' }}
       >
         <h6 className='my-3 text-xl font-bold tracking-wide'>What I Offer</h6>
@@ -32,7 +32,7 @@ const About: NextPage = () => {
           variants={stagger}
           initial='initial'
           animate='animate'
-          className='grid gap-6 lg:grid-cols-2'
+          className='grid gap-4 lg:grid-cols-2'
         >
           {services.map((service) => (
             <motion.div

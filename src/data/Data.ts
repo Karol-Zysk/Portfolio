@@ -1,9 +1,9 @@
-import { AiOutlineAntDesign, AiOutlineApi } from 'react-icons/ai';
+import { AiOutlineApi } from 'react-icons/ai';
 import { BiGame } from 'react-icons/bi';
 import { BsCircleFill } from 'react-icons/bs';
-import { FaRegQuestionCircle, FaServer } from 'react-icons/fa';
-import { RiComputerLine } from 'react-icons/ri';
-import { SiFrontendmentor } from 'react-icons/si';
+import { FaRegQuestionCircle } from 'react-icons/fa';
+import { RiComputerLine, RiServerFill } from 'react-icons/ri';
+import { SiAntdesign, SiFrontendmentor } from 'react-icons/si';
 
 import { IProject, Service, Skill } from '../../type';
 
@@ -14,10 +14,9 @@ export const services: Service[] = [
     about: 'I can build a beautiful and scalable SPA using  <b>React.js</b>  ',
   },
   {
-    Icon: FaServer,
+    Icon: RiServerFill,
     title: 'Backend  Development',
-    about:
-      'Despite the lack of experience, projects using <b>NodeJS</b> interested me very much and I know that I will develop them in the future.',
+    about: 'I am gaining experience using NodeJS in my projects.',
   },
   {
     Icon: AiOutlineApi,
@@ -28,13 +27,13 @@ export const services: Service[] = [
     Icon: FaRegQuestionCircle,
     title: 'Problem Solver',
     about:
-      'Ask how many nights turned into mornings because I <b>had to</b> solve the problem. ',
+      'Ask how many nights were turned into mornings because I <b>had to</b> solve the problem. ',
   },
   {
-    Icon: AiOutlineAntDesign,
+    Icon: SiAntdesign,
     title: 'UI/UX design',
     about:
-      'Most of the graphics I use I create or edit myself using<b>Photoshop</b>  and  <b>Gimp</b> ',
+      "Most of the graphics that I'm  using I'm create or edit myself using <b>Photoshop</b>  and  <b>Gimp</b> ",
   },
   {
     Icon: SiFrontendmentor,
@@ -61,27 +60,23 @@ export const languages: Skill[] = [
   },
   {
     Icon: BsCircleFill,
-    name: 'NodeJS',
+    name: 'Node',
     level: '30%',
   },
   {
     Icon: BsCircleFill,
-    name: 'MongoDB',
+    name: 'Mongo',
     level: '35%',
   },
   {
     Icon: BsCircleFill,
-    name: 'NextJS',
+    name: 'Next',
     level: '30%',
   },
 ];
 
 export const tools: Skill[] = [
-  {
-    Icon: BsCircleFill,
-    name: 'Styled-Components',
-    level: '75%',
-  },
+  
   {
     Icon: BsCircleFill,
     name: 'Gimp',
@@ -99,7 +94,7 @@ export const tools: Skill[] = [
   },
   {
     Icon: BiGame,
-    name: 'Heroes of Might and Magic III',
+    name: 'HoMM III & V',
     level: '85%',
   },
 ];
@@ -190,7 +185,7 @@ export const projects: IProject[] = [
     github_url: 'https://github.com/Karol-Zysk/small-gym',
     category: ['React'],
     description:
-      'Small Gym Web Page Project. First project with styled components. They are my favorite tool at the moment.',
+      '"Small Gym" Web Page Project. First project with styled components. They are my favorite tool at this moment.',
     key_techs: ['React', 'Styled-Components', 'React-Router'],
   },
   {

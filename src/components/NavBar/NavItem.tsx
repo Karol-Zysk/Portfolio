@@ -8,9 +8,9 @@ const NavItem: FunctionComponent<{
   route: string;
 }> = ({ activItem, name, route, setActiveItem }) => {
   return activItem !== name ? (
-    <Link href={route}>
+    <Link href={route} scroll={false}>
       <a>
-        <span onClick={() => setActiveItem(name)} className='hover:text-green'>
+        <span onClick={() => setActiveItem(name)} className='hover:text-violet'>
           {name}
         </span>
       </a>

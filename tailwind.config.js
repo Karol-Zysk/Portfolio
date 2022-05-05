@@ -14,8 +14,8 @@ module.exports = {
         "custom-dark": "5px 5px 10px #0a0c0e , -5px -5px 10px #14161c",
       },
       colors: {
-        green: {
-          DEFAULT: "#00f260",
+        violet: {
+          DEFAULT: "#53118a",
         },
         dark: {
           DEFAULT: "#010101",

@@ -16,7 +16,7 @@ const NavBar = () => {
 
   return (
     <div className='my-3 flex justify-between px-5 py-3'>
-      <span className='border-b-4 border-green text-xl font-bold text-green md:text-2xl'>
+      <span className='border-b-4 border-violet text-xl font-bold text-violet md:text-2xl'>
         {activeItem}
       </span>
       <div className='flex space-x-5 text-xl  '>
@@ -25,6 +25,7 @@ const NavBar = () => {
           setActiveItem={setActiveItem}
           name='About'
           route='/'
+          
         />
         <NavItem
           activItem={activeItem}

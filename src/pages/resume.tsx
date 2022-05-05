@@ -32,16 +32,26 @@ const Resume = () => {
         <title>Frontend Developer | resume |Karol Zyśk</title>
       </Head>
       <div className='grid gap-6 md:grid-cols-2'>
-        <motion.div variants={variants} initial='initial' animate='animate'>
-          <h5 className='my-3 text-2xl font-bold'>Soft Skills</h5>
-          <div className=''>
-            <p className='mb-1 font-semibold'>Teamwork</p>
-            <p className='mb-1 font-semibold'>Creative thinking</p>
-            <p className='mb-1 font-semibold'>Problem-solving </p>
-            <p className='mb-1 font-semibold'>Communication </p>
-          </div>
+        <motion.div
+          className='tracking-wider'
+          variants={variants}
+          initial='initial'
+          animate='animate'
+        >
+          <h5 className='my-3 text-2xl font-bold '>Soft Skills</h5>
+          <ul className=''>
+            <li className='mb-1 font-semibold'>Teamwork</li>
+            <li className='mb-1 font-semibold'>Creative thinking</li>
+            <li className='mb-1 font-semibold'>Problem-solving </li>
+            <li className='mb-1 font-semibold'>Communication </li>
+          </ul>
         </motion.div>
-        <motion.div variants={variants} initial='initial' animate='animate'>
+        <motion.div
+          className='my-2 hidden tracking-wider md:block '
+          variants={variants}
+          initial='initial'
+          animate='animate'
+        >
           <h5 className='my-3 text-2xl font-bold'>Not Related</h5>
           <div className=''>
             <p className='mb-1 font-semibold'>
@@ -80,6 +90,28 @@ const Resume = () => {
           </div>
         </div>
       </div>
+      <motion.div
+        className='my-2 block tracking-wider md:hidden '
+        variants={variants}
+        initial='initial'
+        animate='animate'
+      >
+        <h5 className='my-3 text-2xl font-bold'>Not Related</h5>
+        <div className=''>
+          <p className='mb-2 font-semibold'>
+            Champion of Mazovia cadets in boxing, weight 75 kg
+          </p>
+          <p className='mb-2 font-semibold'>
+            Personal Trainer with 7 years of experience
+          </p>
+          <p className='mb-2 font-semibold'>
+            Boxing Trainer with 7 years of experience
+          </p>
+          <p className='mb-5 font-semibold'>
+            Sports Masseur with 3 years of experience
+          </p>
+        </div>
+      </motion.div>
     </motion.div>
   );
 };
