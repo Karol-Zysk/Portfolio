@@ -60,7 +60,7 @@ const SideBar = () => {
           >
             <div className='spa mr-auto ml-auto flex items-center justify-center'>
               <GoMail size={18} className='mr-2 text-violet' />
-              E-Mail
+              E-Mail me
             </div>
           </a>
           <div className=' flex items-center justify-center space-x-2'>
@@ -73,7 +73,7 @@ const SideBar = () => {
           <a
             aria-label='Github'
             href='https://github.com/Karol-Zysk/'
-            className='text-md flex  items-center rounded-3xl  border-2  border-violet  px-2 py-1 font-semibold  duration-100 ease-linear hover:scale-105 '
+            className='text-md flex  items-center rounded-3xl  border-2  border-violet  px-3 py-1 font-semibold  duration-100 ease-linear hover:scale-105 '
           >
             Github
             <AiFillGithub size={30} className='ml-2 ' />
@@ -84,7 +84,7 @@ const SideBar = () => {
             aria-label='Mail'
             href='/assets/Karol_Zyśk_-_Frontend_Developer.pdf'
             download='Karol_Zyśk_-_Frontend_Developer.pdf'
-            className='text-md mr-auto ml-auto flex items-center  rounded-3xl border-2  border-violet  px-2 py-1 font-semibold duration-100 ease-linear hover:scale-105 '
+            className='text-md mr-auto ml-auto flex items-center  rounded-3xl border-2  border-violet  px-3 py-1 font-semibold duration-100 ease-linear hover:scale-105 '
           >
             Resume
             <GiTie size={30} className='ml--1 ' />

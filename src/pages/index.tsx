@@ -24,7 +24,7 @@ const About: NextPage = () => {
         Frontend Developer with a passion to Create and a willingness to Learn{' '}
       </h5>
       <div
-        className='mt-4 flex-grow bg-gradient-to-r from-gray-300 to-gray-100  p-4 dark:from-dark-100 dark:to-dark-200'
+        className='mt-4 flex-grow bg-gradient-to-r from-white to-gray-100  p-4 dark:from-dark-100 dark:to-dark-200'
         style={{ marginLeft: '-1.5rem', marginRight: '-1.5rem' }}
       >
         <h6 className='my-3 text-xl font-bold tracking-wide'>What I Offer</h6>
