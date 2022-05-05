@@ -11,10 +11,7 @@ import photo from '../../images/photo.jpg';
 
 const SideBar = () => {
   const { theme, setTheme } = useTheme();
-  console.log(theme);
-  const changeTheme = () => {
-    setTheme(theme === 'light' ? 'dark' : 'light');
-  };
+
   return (
     <>
       {theme === 'dark' ? (
@@ -22,7 +19,7 @@ const SideBar = () => {
           cursor='pointer'
           size={36}
           onClick={() => setTheme('light')}
-          className='pointer  absolute right-10 top-10 text-white md:right-10 md:top-10'
+          className='pointer  absolute right-7 top-7 text-white md:right-10 md:top-10'
         />
       ) : (
         <BsFillSunFill
@@ -30,7 +27,7 @@ const SideBar = () => {
           size={42}
           color='yellow'
           onClick={() => setTheme('dark')}
-          className='pointer  absolute right-10 top-10 text-white md:right-10 md:top-10'
+          className='pointer  absolute right-7 top-7 text-white md:right-10 md:top-10'
         />
       )}
 

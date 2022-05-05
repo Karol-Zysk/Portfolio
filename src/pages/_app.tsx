@@ -2,7 +2,6 @@ import { AnimatePresence } from 'framer-motion';
 import { AppProps } from 'next/app';
 import { ThemeProvider } from 'next-themes';
 
-
 import '@/styles/globals.css';
 
 import NavBar from '@/components/NavBar/NavBar';
