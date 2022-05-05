@@ -54,7 +54,7 @@ const About: NextPage = () => {
 export default About;
 
 export const getStaticProps = async (_context: GetStaticPropsContext) => {
-  const res = await fetch('http://localhost:3000/api/services');
+  const res = await fetch(`${process.env.VERCEL_URL}/api/services`);
   const data = await res.json();
 
   return {
