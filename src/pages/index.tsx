@@ -1,14 +1,12 @@
 import { fadeInUp, routeAnimation, stagger } from 'animations';
 import { motion } from 'framer-motion';
-import { GetStaticPropsContext, NextPage } from 'next';
+import { GetServerSideProps, GetServerSidePropsContext, NextPage } from 'next';
 import Head from 'next/head';
 import * as React from 'react';
 
 import ServiceCard from '@/components/ServiceCard/ServiceCard';
 
 import { services } from '../data/Data';
-
-// import { services } from '@/data/aboutData';
 
 const About: NextPage = () => {
   return (
@@ -53,13 +51,8 @@ const About: NextPage = () => {
 
 export default About;
 
-export const getStaticProps = async (_context: GetStaticPropsContext) => {
-  const res = await fetch(`${process.env.VERCEL_URL}/api/services`);
-  const data = await res.json();
-
-  return {
-    props: {
-      services: data.services,
-    },
-  };
+export const getServerSideProps: GetServerSideProps = async (
+  context: GetServerSidePropsContext
+) => {
+  return { props: { endpoint: process.env.VERCEL_URL } };
 };
