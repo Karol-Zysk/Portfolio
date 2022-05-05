@@ -1,4 +1,3 @@
-import { motion } from 'framer-motion';
 import Link from 'next/link';
 import React, { FunctionComponent } from 'react';
 
@@ -8,22 +7,17 @@ const NavItem: FunctionComponent<{
   route: string;
 }> = ({ name, route, pathname }) => {
   return (
-    <motion.span
+    <div
       className={` ${
         pathname === route
           ? ' border-b-4  border-violet'
-          : ' hover:border-b-4   hover:border-violet'
-      }   text-xl font-bold  text-violet duration-150  ease-linear md:text-2xl`}
+          : ' border-b-4  border-transparent '
+      }   flex space-x-5 border-b-4  text-xl font-bold  text-violet duration-150 ease-linear hover:border-violet`}
     >
-      <div className='flex space-x-5  text-xl   '>
-        <Link href={route} scroll={false}>
-          <a>
-            {}
-            <span className='hover:text-violet'>{name}</span>
-          </a>
-        </Link>
-      </div>
-    </motion.span>
+      <Link href={route} scroll={false}>
+        <a>{name}</a>
+      </Link>
+    </div>
   );
 };
 

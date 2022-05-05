@@ -15,9 +15,9 @@ const Bar: FunctionComponent<{ data: Skill }> = ({
     },
   };
   return (
-    <div className=' my-3 rounded-full bg-gray-300 text-white dark:bg-dark-200 '>
+    <div className=' my-3 rounded-full bg-gray-300  text-white dark:bg-dark-200 '>
       <motion.div
-        className='flex items-center rounded-full bg-gradient-to-r  from-violet to-blue-600 px-4 py-1 text-sm'
+        className='flex items-center rounded-full bg-gradient-to-r  from-violet to-blue-600 px-4 py-2 text-sm'
         variants={variants}
         initial='initial'
         animate='animate'
