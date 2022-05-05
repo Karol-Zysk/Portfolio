@@ -1,8 +1,5 @@
-import { fadeInUp } from 'animations';
-import { motion } from 'framer-motion';
 import Image from 'next/image';
 import { useTheme } from 'next-themes';
-import { useEffect } from 'react';
 import React from 'react';
 import { AiFillGithub, AiOutlinePhone } from 'react-icons/ai';
 import { BsFillSunFill } from 'react-icons/bs';
@@ -14,29 +11,29 @@ import photo from '../../images/photo.jpg';
 
 const SideBar = () => {
   const { theme, setTheme } = useTheme();
-
-  useEffect(() => {
-    setTheme('light');
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
+  console.log(theme);
   const changeTheme = () => {
     setTheme(theme === 'light' ? 'dark' : 'light');
   };
   return (
     <>
-      <motion.button
-        animate='animate'
-        initial='initial'
-        variants={fadeInUp}
-        onClick={changeTheme}
-        className='  absolute right-10 top-10 text-white md:right-10 md:top-10'
-      >
-        {theme === 'dark' ? (
-          <FaMoon size={36} />
-        ) : (
-          <BsFillSunFill size={42} color='yellow' />
-        )}
-      </motion.button>
+      {theme === 'dark' ? (
+        <FaMoon
+          cursor='pointer'
+          size={36}
+          onClick={() => setTheme('light')}
+          className='pointer  absolute right-10 top-10 text-white md:right-10 md:top-10'
+        />
+      ) : (
+        <BsFillSunFill
+          cursor='pointer'
+          size={42}
+          color='yellow'
+          onClick={() => setTheme('dark')}
+          className='pointer  absolute right-10 top-10 text-white md:right-10 md:top-10'
+        />
+      )}
+
       <div className=' dark:bg-dark-100'>
         <Image
           src={photo}
