@@ -45,15 +45,15 @@ const SideBar = () => {
         <h3 className='my-3 font-kaushan text-3xl font-medium'>
           <span className='text-green '>Karol </span> Zyśk
         </h3>
-        <p className='my-3  px-2 py-1  '>Junior Frontend Developer</p>
+        <p className='my-3  px-2 py-1 text-lg  '>Junior Frontend Developer</p>
 
         <div className='my-5 mx-auto flex w-9/12 justify-around   text-green md:w-full'>
           <a
             href='https://github.com/Karol-Zysk/'
-            className='text-md flex items-center'
+            className='text-md flex  items-center rounded-3xl border-2 border-green py-1 px-2 duration-100 ease-linear hover:scale-105 '
           >
             Github
-            <AiFillGithub size={32} className='ml-2' />
+            <AiFillGithub size={30} className='ml-2 ' />
           </a>
         </div>
         <div
@@ -65,7 +65,6 @@ const SideBar = () => {
             <span>Warszawa, Polska</span>
           </div>
           <div className='mb-2 flex items-center justify-center space-x-2'>
-            <GoMail />
             <span>zysk.karol.pawel@gmail.com</span>
           </div>
           <div className=' flex items-center justify-center space-x-2'>
@@ -73,13 +72,6 @@ const SideBar = () => {
             <span>518-201-934</span>
           </div>
         </div>
-        <button
-          type='button'
-          onClick={() => window.open('mailto:zysk.karol.pawel@gmail.com')}
-          className='my-2 w-8/12 rounded-full bg-black bg-gradient-to-r from-green to-blue-400 py-2 px-5  text-white focus:outline-none'
-        >
-          Email Me
-        </button>
 
         <a
           className='my-2 ml-auto mr-auto flex w-8/12 rounded-full bg-black bg-gradient-to-r from-green to-blue-400 py-2 px-5 text-center  text-white focus:outline-none'
@@ -91,6 +83,18 @@ const SideBar = () => {
             Resume
           </div>
         </a>
+        <button
+          type='button'
+          onClick={() =>
+            (document.location = 'mailto:zysk.karol.pawel@gmail.com')
+          }
+          className='my-2 w-8/12 rounded-full bg-black bg-gradient-to-r from-green to-blue-400 py-2 px-5  text-white focus:outline-none'
+        >
+          <div className='mr-auto ml-auto flex items-center justify-center'>
+            <GoMail className='mr-2 h-6 w-6' />
+            Email Me
+          </div>
+        </button>
       </div>
     </>
   );

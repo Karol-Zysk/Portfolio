@@ -29,24 +29,29 @@ const Resume = () => {
     >
       <div className='grid gap-6 md:grid-cols-2'>
         <motion.div variants={variants} initial='initial' animate='animate'>
-          <h5 className='my-3 text-2xl font-bold'>Education</h5>
+          <h5 className='my-3 text-2xl font-bold'>Soft Skills</h5>
           <div className=''>
-            <h5 className='my-2 text-xl font-bold'>
-              Computer Science Engineering
-            </h5>
-            <p className='font-semibold'>Academy of Technology (2017-2021)</p>
-            <p className='my-3'>
-              I am currently pursuing B.tech in Computer Science Engineering
-              from Academy of Technology
-            </p>
+            <p className='mb-1 font-semibold'>Teamwork</p>
+            <p className='mb-1 font-semibold'>Creative thinking</p>
+            <p className='mb-1 font-semibold'>Problem-solving </p>
+            <p className='mb-1 font-semibold'>Communication </p>
           </div>
         </motion.div>
         <motion.div variants={variants} initial='initial' animate='animate'>
-          <h5 className='my-3 text-2xl font-bold'>Experience</h5>
+          <h5 className='my-3 text-2xl font-bold'>Not Related</h5>
           <div className=''>
-            <h5 className='my-2 text-xl font-bold'>Software Developer Jr.</h5>
-            <p className='font-semibold'>Tata Consultancy Services</p>
-            <p className='my-3'>I dont know why I am doing this job</p>
+            <p className='mb-1 font-semibold'>
+              Champion of Mazovia cadets in boxing, weight 75 kg
+            </p>
+            <p className='mb-1 font-semibold'>
+              Personal Trainer with 7 years of experience
+            </p>
+            <p className='mb-1 font-semibold'>
+              Boxing Trainer with 7 years of experience
+            </p>
+            <p className='mb-1 font-semibold'>
+              Sports Masseur with 3 years of experience
+            </p>
           </div>
         </motion.div>
       </div>

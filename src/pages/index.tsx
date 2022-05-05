@@ -18,9 +18,8 @@ const About: NextPage = () => {
       animate='animate'
       exit='exit'
     >
-      <h5 className='my-3 font-medium'>
-        I can build a beautiful and scalable SPA using <b> HTML</b>,<b>CSS</b>{' '}
-        and <b>React.js</b>{' '}
+      <h5 className='my-3 text-lg font-medium'>
+        Frontend Developer with a passion to Create and a willingness to Learn{' '}
       </h5>
       <div
         className='mt-5 flex-grow bg-gradient-to-r from-gray-300 to-gray-100  p-4 dark:from-dark-100 dark:to-dark-200'

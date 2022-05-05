@@ -1,8 +1,9 @@
 import { AiOutlineAntDesign, AiOutlineApi } from 'react-icons/ai';
+import { BiGame } from 'react-icons/bi';
 import { BsCircleFill } from 'react-icons/bs';
-import { FaServer } from 'react-icons/fa';
-import { MdDeveloperMode } from 'react-icons/md';
+import { FaRegQuestionCircle, FaServer } from 'react-icons/fa';
 import { RiComputerLine } from 'react-icons/ri';
+import { SiFrontendmentor } from 'react-icons/si';
 
 import { IProject, Service, Skill } from '../../type';
 
@@ -10,37 +11,35 @@ export const services: Service[] = [
   {
     Icon: RiComputerLine,
     title: 'Frontend Development',
-    about:
-      'I can build a beautiful and scalable SPA using <b> HTML</b>,<b>CSS</b>   and <b>React.js</b> ',
+    about: 'I can build a beautiful and scalable SPA using  <b>React.js</b>  ',
   },
   {
     Icon: FaServer,
     title: 'Backend  Development',
     about:
-      'handle database, server, api using <b>Express </b> & other popular frameworks',
+      'Despite the lack of experience, projects using <b>NodeJS</b> interested me very much and I know that I will develop them in the future.',
   },
   {
     Icon: AiOutlineApi,
     title: 'API Development',
-    about:
-      'I can develop robust  REST API using <b>django-rest-api</b>  & <b>Node API</b> ',
+    about: 'Working with <b>API</b> is not work for me, but <b>FUN</b> ',
   },
   {
-    Icon: MdDeveloperMode,
-    title: 'Competitive Coder',
-    about: 'a daily problem solver in <b>HackerRank</b>  and <b>Leet Code</b> ',
+    Icon: FaRegQuestionCircle,
+    title: 'Problem Solver',
+    about:
+      'Ask how many nights turned into mornings because I <b>had to</b> solve the problem. ',
   },
   {
     Icon: AiOutlineAntDesign,
-    title: 'UI/UX designer',
+    title: 'UI/UX design',
     about:
-      'stunning user interface designer using <b>Figma</b>  and  <b>Framer</b> ',
+      'Most of the graphics I use I create or edit myself using<b>Photoshop</b>  and  <b>Gimp</b> ',
   },
   {
-    Icon: RiComputerLine,
-    title: 'Whatever',
-    about:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic quis minima autem!',
+    Icon: SiFrontendmentor,
+    title: 'Contract',
+    about: 'Give me a chance and I guarantee you will be satisfied.',
   },
 ];
 
@@ -53,7 +52,7 @@ export const languages: Skill[] = [
   {
     Icon: BsCircleFill,
     name: 'React',
-    level: '60%',
+    level: '69%',
   },
   {
     Icon: BsCircleFill,
@@ -80,23 +79,28 @@ export const languages: Skill[] = [
 export const tools: Skill[] = [
   {
     Icon: BsCircleFill,
+    name: 'Styled-Components',
+    level: '75%',
+  },
+  {
+    Icon: BsCircleFill,
+    name: 'Gimp',
+    level: '65%',
+  },
+  {
+    Icon: BsCircleFill,
     name: 'Figma',
+    level: '40%',
+  },
+  {
+    Icon: BiGame,
+    name: 'Starcraft 2',
+    level: '55%',
+  },
+  {
+    Icon: BiGame,
+    name: 'Heroes of Might and Magic III',
     level: '85%',
-  },
-  {
-    Icon: BsCircleFill,
-    name: 'Photoshop',
-    level: '45%',
-  },
-  {
-    Icon: BsCircleFill,
-    name: 'Illustrator',
-    level: '60%',
-  },
-  {
-    Icon: BsCircleFill,
-    name: 'Framer',
-    level: '45%',
   },
 ];
 
@@ -104,17 +108,18 @@ export const projects: IProject[] = [
   {
     name: 'Journey Advisor',
     description:
-      'This app shows a statistical view about corona virus over the world',
+      'Designate a travel route by car, and the application will calculate when you will get there and what the travel costs will be. Already have all the information? Export them to pdf! Easy!',
     image_path: '/images/maps.png',
     deployed_url: 'https://admirable-mochi-c1e6c8.netlify.app/',
     github_url: 'https://github.com/Karol-Zysk/React-Jurney',
-    category: ['React', 'Typescript'],
+    category: ['React'],
     key_techs: [
       'React',
       'Typescript',
       'Google maps API',
       'REST API',
       'Chakra UI',
+      'Styled-Components',
     ],
   },
   {
@@ -124,7 +129,7 @@ export const projects: IProject[] = [
     github_url: 'https://github.com/Karol-Zysk/Strenght-Training-Atlas',
     category: ['React', 'MongoDB', 'Node'],
     description:
-      'An web app which shows how an algorithm (path finding or sorting) works with cool animation',
+      'My first major project in React  when I started writing it, I knew the basics of React. It took me 2 months to develop the project. During this time, I have learned a lot. A page with a dose of knowledge about strength training. Contacts allows you to contact personal trainers via email. Basic contains basic types of strength training with information. Exercises includes many exercises with animation and description. ',
     key_techs: [
       'React',
       'MongoDB',
@@ -144,14 +149,8 @@ export const projects: IProject[] = [
     github_url: 'https://github.com/Karol-Zysk/Kurpie.com',
     category: ['React'],
     description:
-      'Social Media app for developers who can share project,create posts,etc...',
-    key_techs: [
-      'React',
-      'Styled-Components',
-      'React-Router',
-      'React-Scroll',
-      'REST API',
-    ],
+      'Website dedicated to and promoting Kurpie - the region I come from.',
+    key_techs: ['React', 'Styled-Components', 'React-Router', 'React-Scroll'],
   },
 
   {
@@ -161,7 +160,7 @@ export const projects: IProject[] = [
     github_url: 'https://github.com/Karol-Zysk/E-Comerce',
     category: ['React', 'Node', 'MongoDB'],
     description:
-      'Basic Realtime Chat App where one can create a room can talk to each other',
+      'Electronics store project. Created mainly to learn about React Redux in practice.',
     key_techs: [
       'React',
       'Node',
@@ -178,9 +177,9 @@ export const projects: IProject[] = [
     image_path: '/images/quiz.png',
     deployed_url: 'https://stellar-basbousa-9e821f.netlify.app/',
     github_url: 'https://github.com/Karol-Zysk/React-Typescript-QUIZ--learning',
-    category: ['React', 'Typescript'],
+    category: ['React', 'Typescript', 'MongoDB', 'Node'],
     description:
-      'First Django Project :) | Typical Social Media App where one can post,like ,comment etc',
+      'First Typescript / React Project | Computer / Programming quiz with the option of adding the best results.',
     key_techs: ['React', 'Typescript', 'REST API', 'Styled-Components'],
   },
 
@@ -191,7 +190,7 @@ export const projects: IProject[] = [
     github_url: 'https://github.com/Karol-Zysk/small-gym',
     category: ['React'],
     description:
-      'Tried ML with JS :) | this app classifies a color using CNN algorithm in browser',
+      'Small Gym Web Page Project. First project with styled components. They are my favorite tool at the moment.',
     key_techs: ['React', 'Styled-Components', 'React-Router'],
   },
   {
@@ -199,10 +198,10 @@ export const projects: IProject[] = [
     image_path: '/images/aoe.png',
     deployed_url: 'https://dancing-sprite-c7b78c.netlify.app/',
     github_url: 'https://github.com/Karol-Zysk/Wololo-AoE',
-    category: ['React'],
+    category: ['React', 'Typescript'],
     description:
-      'Tried ML with JS :) | this app classifies a color using CNN algorithm in browser',
-    key_techs: ['React', 'Styled-Components', 'REST API'],
+      'Age of Empires Units Calculator. If you want to know how many volutes you can buy for a given amount of resources => check!',
+    key_techs: ['React', 'Styled-Components', 'TypeScript', 'REST API'],
   },
   {
     name: "Kaja's Vocabulary",
@@ -211,7 +210,7 @@ export const projects: IProject[] = [
     github_url: 'https://github.com/Karol-Zysk/Vocabulary-GIT',
     category: ['JavaScript'],
     description:
-      'Full(almost) Functional YouTube replica where one can login with his/her youtube account to enjoy "not-YouTube".User can like a video,comment on a video & Much More ',
+      "I'm ashamed of the code but this is one of my first projects using JavaScript. I started writing it after the first JavaScript course, and the project was inspired by a gift my daughter got for her first birthday - 'Talking Dictionary'",
     key_techs: ['JavaScript'],
   },
   {
@@ -221,7 +220,7 @@ export const projects: IProject[] = [
     github_url: 'https://github.com/Karol-Zysk/Astro-Stats',
     category: ['JavaScript'],
     description:
-      'o my goal replica where an user can keep an eye on his favorite club.This app will keep providing \n all the statistics of that club.all the fans can also chat ',
-    key_techs: ['JavaScript'],
+      'One of the first projects after completing the first JavaScript course. If you are curious how much you would weigh on the planets of the solar system, the sun or a black hole => check.',
+    key_techs: ['JavaScript', 'TypeScript'],
   },
 ];
