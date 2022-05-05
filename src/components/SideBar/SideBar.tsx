@@ -2,6 +2,7 @@ import { fadeInUp } from 'animations';
 import { motion } from 'framer-motion';
 import Image from 'next/image';
 import { useTheme } from 'next-themes';
+import { useEffect } from 'react';
 import React from 'react';
 import { AiFillGithub, AiOutlinePhone } from 'react-icons/ai';
 import { BsFillSunFill } from 'react-icons/bs';
@@ -14,6 +15,10 @@ import photo from '../../images/photo.jpg';
 const SideBar = () => {
   const { theme, setTheme } = useTheme();
 
+  useEffect(() => {
+    setTheme('light');
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
   const changeTheme = () => {
     setTheme(theme === 'light' ? 'dark' : 'light');
   };
@@ -26,10 +31,10 @@ const SideBar = () => {
         onClick={changeTheme}
         className='  absolute right-10 top-10 text-white md:right-10 md:top-10'
       >
-        {theme === 'light' ? (
-          <BsFillSunFill size={42} color='yellow' />
-        ) : (
+        {theme === 'dark' ? (
           <FaMoon size={36} />
+        ) : (
+          <BsFillSunFill size={42} color='yellow' />
         )}
       </motion.button>
       <div className=' dark:bg-dark-100'>
