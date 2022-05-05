@@ -15,7 +15,7 @@ const NavItem: FunctionComponent<{
       }   flex space-x-5 border-b-4  text-xl font-bold  text-violet duration-150 ease-linear hover:border-violet`}
     >
       <Link href={route} scroll={false}>
-        <a>{name}</a>
+        {name}
       </Link>
     </div>
   );
