@@ -63,12 +63,14 @@ const ProjectCard: FunctionComponent<{
               >
                 <AiFillGithub /> <span>Github</span>
               </a>
-              <a
-                href={deployed_url}
-                className='flex items-center space-x-3  rounded-lg bg-gray-200 px-4 py-2 text-lg dark:bg-dark-700'
-              >
-                <AiFillProject /> <span>Project</span>
-              </a>
+              {name !== 'Portfolio' && (
+                <a
+                  href={deployed_url}
+                  className='flex items-center space-x-3  rounded-lg bg-gray-200 px-4 py-2 text-lg dark:bg-dark-700'
+                >
+                  <AiFillProject /> <span>Project</span>
+                </a>
+              )}
             </motion.div>
           </motion.div>
 

@@ -76,7 +76,6 @@ export const languages: Skill[] = [
 ];
 
 export const tools: Skill[] = [
-  
   {
     Icon: BsCircleFill,
     name: 'Gimp',
@@ -110,7 +109,7 @@ export const projects: IProject[] = [
     category: ['React'],
     key_techs: [
       'React',
-      'Typescript',
+      'TypeScript',
       'Google maps API',
       'REST API',
       'Chakra UI',
@@ -166,16 +165,25 @@ export const projects: IProject[] = [
       'React-Router',
     ],
   },
+  {
+    name: 'Portfolio',
+    image_path: '/images/portfolio.png',
+    deployed_url: 'null',
+    github_url: 'https://github.com/Karol-Zysk/Portfolio',
+    category: ['React', 'NextJS', 'TypeScript'],
+    description: 'My Portfolio page with my projects and info about me.',
+    key_techs: ['React', 'NextJS', 'TypeScript', 'TailwindCSS'],
+  },
 
   {
     name: 'IT Quiz',
     image_path: '/images/quiz.png',
     deployed_url: 'https://stellar-basbousa-9e821f.netlify.app/',
-    github_url: 'https://github.com/Karol-Zysk/React-Typescript-QUIZ--learning',
-    category: ['React', 'Typescript', 'MongoDB', 'Node'],
+    github_url: 'https://github.com/Karol-Zysk/React-TypeScript-QUIZ--learning',
+    category: ['React', 'TypeScript', 'MongoDB', 'Node'],
     description:
-      'First Typescript / React Project | Computer / Programming quiz with the option of adding the best results.',
-    key_techs: ['React', 'Typescript', 'REST API', 'Styled-Components'],
+      'First TypeScript / React Project | Computer / Programming quiz with the option of adding the best results.',
+    key_techs: ['React', 'TypeScript', 'REST API', 'Styled-Components'],
   },
 
   {
@@ -193,7 +201,7 @@ export const projects: IProject[] = [
     image_path: '/images/aoe.png',
     deployed_url: 'https://dancing-sprite-c7b78c.netlify.app/',
     github_url: 'https://github.com/Karol-Zysk/Wololo-AoE',
-    category: ['React', 'Typescript'],
+    category: ['React', 'TypeScript'],
     description:
       'Age of Empires Units Calculator. If you want to know how many volutes you can buy for a given amount of resources => check!',
     key_techs: ['React', 'Styled-Components', 'TypeScript', 'REST API'],

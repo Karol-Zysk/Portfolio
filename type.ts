@@ -24,6 +24,7 @@ export interface IProject {
 export type Category =
   | 'React'
   | 'Node'
-  | 'Typescript'
+  | 'TypeScript'
   | 'JavaScript'
-  | 'MongoDB';
+  | 'MongoDB'
+  | 'NextJS';
