@@ -17,17 +17,15 @@ const SideBar = () => {
       {theme === 'dark' ? (
         <FaMoon
           cursor='pointer'
-          size={36}
           onClick={() => setTheme('light')}
-          className='pointer  absolute right-7 top-7 text-white md:right-10 md:top-10'
+          className='pointer  absolute right-6 top-6 text-3xl text-white md:right-10 md:top-10 md:text-5xl'
         />
       ) : (
         <BsFillSunFill
           cursor='pointer'
-          size={42}
           color='yellow'
           onClick={() => setTheme('dark')}
-          className='pointer  absolute right-7 top-7 text-white md:right-10 md:top-10'
+          className='pointer absolute  right-6 top-6 text-3xl text-white md:right-10 md:top-10 md:text-5xl '
         />
       )}
 
