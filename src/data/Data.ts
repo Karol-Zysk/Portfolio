@@ -205,7 +205,7 @@ export const projects: IProject[] = [
     github_url: 'https://github.com/Karol-Zysk/Vocabulary-GIT',
     category: ['JavaScript'],
     description:
-      "I'm ashamed of the code but this is one of my first projects using JavaScript. I started writing it after the first JavaScript course, and the project was inspired by a gift my daughter got for her first birthday - 'Talking Dictionary'",
+      "Not very proud of the code but this is one of my first projects using JavaScript. I started writing it after the first JavaScript course, and the project was inspired by a gift my daughter got for her first birthday - 'Talking Dictionary'",
     key_techs: ['JavaScript'],
   },
   {
