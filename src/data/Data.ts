@@ -45,11 +45,6 @@ export const services: Service[] = [
 export const languages: Skill[] = [
   {
     Icon: BsCircleFill,
-    name: 'JavaScript',
-    level: '60%',
-  },
-  {
-    Icon: BsCircleFill,
     name: 'React',
     level: '69%',
   },
@@ -57,6 +52,11 @@ export const languages: Skill[] = [
     Icon: BsCircleFill,
     name: 'TypeScript',
     level: '50%',
+  },
+  {
+    Icon: BsCircleFill,
+    name: 'Unit-Tests',
+    level: '35%',
   },
   {
     Icon: BsCircleFill,
@@ -84,6 +84,11 @@ export const tools: Skill[] = [
   {
     Icon: BsCircleFill,
     name: 'Figma',
+    level: '40%',
+  },
+  {
+    Icon: BsCircleFill,
+    name: 'Docker',
     level: '40%',
   },
   {
