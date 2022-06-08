@@ -12,7 +12,7 @@ const NavItem: FunctionComponent<{
         pathname === route
           ? ' border-b-4  border-violet'
           : ' border-b-4  border-transparent '
-      }   flex space-x-5 border-b-4  text-xl font-bold  text-violet duration-150 ease-linear hover:border-violet`}
+      }   sm:text-md flex space-x-5 border-b-4 font-bold text-violet  duration-150 ease-linear hover:border-violet md:text-xl`}
     >
       <Link href={route} scroll={false}>
         {name}

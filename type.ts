@@ -21,6 +21,13 @@ export interface IProject {
   key_techs: string[];
 }
 
+export interface ICourses {
+  author: string;
+  title: string;
+  date: string;
+  link: string;
+}
+
 export type Category =
   | 'React'
   | 'Node'

@@ -5,7 +5,7 @@ import { FaRegQuestionCircle } from 'react-icons/fa';
 import { RiComputerLine, RiServerFill } from 'react-icons/ri';
 import { SiAntdesign, SiFrontendmentor } from 'react-icons/si';
 
-import { IProject, Service, Skill } from '../../type';
+import { ICourses, IProject, Service, Skill } from '../../type';
 
 export const services: Service[] = [
   {
@@ -46,22 +46,22 @@ export const languages: Skill[] = [
   {
     Icon: BsCircleFill,
     name: 'React',
-    level: '69%',
+    level: '72%',
   },
   {
     Icon: BsCircleFill,
     name: 'TypeScript',
-    level: '50%',
+    level: '65%',
   },
   {
     Icon: BsCircleFill,
     name: 'Unit-Tests',
-    level: '35%',
+    level: '55%',
   },
   {
     Icon: BsCircleFill,
     name: 'Node',
-    level: '30%',
+    level: '45%',
   },
   {
     Icon: BsCircleFill,
@@ -71,7 +71,7 @@ export const languages: Skill[] = [
   {
     Icon: BsCircleFill,
     name: 'Next',
-    level: '30%',
+    level: '35%',
   },
 ];
 
@@ -100,6 +100,39 @@ export const tools: Skill[] = [
     Icon: BiGame,
     name: 'HoMM III & V',
     level: '85%',
+  },
+];
+
+export const courses: ICourses[] = [
+  {
+    author: 'Brad Traversy',
+    title: 'Modern JavaScript From The Beginning ',
+    date: '08.2021',
+    link: 'https://www.udemy.com/course/modern-javascript-from-the-beginning/',
+  },
+  {
+    author: 'Bartłomiej Borowczyk',
+    title: 'React od podstaw',
+    date: '01.2022',
+    link: 'https://www.udemy.com/course/kurs-react-od-podstaw/',
+  },
+  {
+    author: 'Adam Hałasa',
+    title: 'React - kurs kompletny',
+    date: '02.2022',
+    link: 'https://tworcastron.pl/kursy/react-kurs-kompletny',
+  },
+  {
+    author: 'Maximilian Schwarzmüller',
+    title: 'JavaScript: The Advanced Concepts ',
+    date: '05.2022',
+    link: 'https://www.udemy.com/course/advanced-javascript-concepts/',
+  },
+  {
+    author: 'John Smilga',
+    title: 'Node.js and Express.js	',
+    date: '06.2022',
+    link: 'https://www.udemy.com/course/nodejs-tutorial-and-projects-course/',
   },
 ];
 
