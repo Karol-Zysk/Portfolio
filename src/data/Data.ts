@@ -124,6 +124,12 @@ export const courses: ICourses[] = [
   },
   {
     author: 'Maximilian Schwarzmüller',
+    title: 'React - The Complete Guide',
+    date: '03.2022',
+    link: 'https://www.udemy.com/course/react-the-complete-guide-incl-redux/',
+  },
+  {
+    author: 'Andrei Neagoie',
     title: 'JavaScript: The Advanced Concepts ',
     date: '05.2022',
     link: 'https://www.udemy.com/course/advanced-javascript-concepts/',
