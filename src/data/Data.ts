@@ -144,6 +144,30 @@ export const courses: ICourses[] = [
 
 export const projects: IProject[] = [
   {
+    name: 'Tusinek',
+    description: 'Website Design for a popular Masurian inn',
+    image_path: '/images/tusinek.png',
+    deployed_url: 'https://zajazd-tusinek.vercel.app/',
+    github_url: 'https://github.com/Karol-Zysk/Zajazd_Tusinek',
+    category: ['React', 'TypeScript'],
+    key_techs: ['React', 'TypeScript', 'NextJS', 'CSS-Modules'],
+  },
+  {
+    name: 'Lotto Simulator',
+    description:
+      'Lotto simulator with the possibility of playing with systems. Check if your game will allow you to gain or lose more.',
+    image_path: '/images/lotto.png',
+    deployed_url: 'https://lotto-symulator.netlify.app/',
+    github_url: 'https://github.com/Karol-Zysk/Lotto',
+    category: ['React', 'NextJS', 'TypeScript', 'Node', 'MongoDB'],
+    key_techs: [
+      'React',
+      'TypeScript',
+      'Server Side Rendering',
+      'Styled-Components',
+    ],
+  },
+  {
     name: 'Journey Advisor',
     description:
       'Designate a travel route by car, and the application will calculate when you will get there and what the travel costs will be. Already have all the information? Export them to pdf! Easy!',
