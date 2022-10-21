@@ -17,7 +17,7 @@ const Courses = () => {
       exit='exit'
     >
       <Head>
-        <title>Frontend Developer | portfolio |Karol Zyśk</title>
+        <title>Fullstack Developer | portfolio |Karol Zyśk</title>
       </Head>
 
       <div

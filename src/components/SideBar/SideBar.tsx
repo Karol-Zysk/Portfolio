@@ -42,7 +42,7 @@ const SideBar = () => {
         <h3 className='my-3 font-kaushan text-3xl font-medium'>
           <span className='text-violet '>Karol </span> Zyśk
         </h3>
-        <p className='my-3  px-2 py-1 text-lg  '>Junior Frontend Developer</p>
+        <p className='my-3  px-2 py-1 text-lg  '>Junior Fullstack Developer</p>
 
         <div
           className='dark:bg-black-500 my-5 bg-gray-200 py-4 dark:bg-dark-200 '
@@ -80,8 +80,8 @@ const SideBar = () => {
         <div className='my-5 mx-auto flex w-10/12 justify-around   text-violet md:w-full'>
           <a
             aria-label='Mail'
-            href='/assets/Karol_Zyśk_-_Frontend_Developer.pdf'
-            download='Karol_Zyśk_-_Frontend_Developer.pdf'
+            href='/assets/Karol_Zyśk_-_Fullstack_Developer.pdf'
+            download='Karol_Zyśk_-_Fullstack_Developer.pdf'
             className='text-md mr-auto ml-auto flex items-center  rounded-3xl border-2  border-violet  px-3 py-1 font-semibold duration-100 ease-linear hover:scale-105 '
           >
             Resume
