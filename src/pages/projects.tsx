@@ -35,7 +35,7 @@ const Projects = () => {
       style={{ height: '65vh' }}
     >
       <Head>
-        <title>Fullstack Developer | projects |Karol Zyśk</title>
+        <title>Frontend Developer | projects |Karol Zyśk</title>
       </Head>
       <ProjectsNavbar
         handlerFilterCategory={handlerFilterCategory}

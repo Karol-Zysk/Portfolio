@@ -29,7 +29,7 @@ const Resume = () => {
       className='px-6 py-2'
     >
       <Head>
-        <title>Fullstack Developer | resume |Karol Zyśk</title>
+        <title>Frontend Developer | resume |Karol Zyśk</title>
       </Head>
       <div className='grid gap-6 md:grid-cols-2'>
         <motion.div

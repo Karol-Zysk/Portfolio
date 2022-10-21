@@ -3,14 +3,14 @@ import { BiGame } from 'react-icons/bi';
 import { BsCircleFill } from 'react-icons/bs';
 import { FaRegQuestionCircle } from 'react-icons/fa';
 import { RiComputerLine, RiServerFill } from 'react-icons/ri';
-import { SiAntdesign, SiFullstackmentor } from 'react-icons/si';
+import { SiAntdesign, SiFrontendmentor } from 'react-icons/si';
 
 import { ICourses, IProject, Service, Skill } from '../../type';
 
 export const services: Service[] = [
   {
     Icon: RiComputerLine,
-    title: 'Fullstack Development',
+    title: 'Frontend Development',
     about: 'I can build a beautiful and scalable SPA using  <b>React.js</b>  ',
   },
   {
@@ -36,7 +36,7 @@ export const services: Service[] = [
       "Most of the graphics that I'm  using I'm create or edit myself using <b>Photoshop</b>  and  <b>Gimp</b> ",
   },
   {
-    Icon: SiFullstackmentor,
+    Icon: SiFrontendmentor,
     title: 'Contract',
     about: 'Give me a chance and I guarantee you will be satisfied.',
   },
