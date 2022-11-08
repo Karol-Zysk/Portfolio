@@ -56,22 +56,22 @@ export const languages: Skill[] = [
   {
     Icon: BsCircleFill,
     name: 'Unit-Tests',
-    level: '55%',
+    level: '35%',
   },
   {
     Icon: BsCircleFill,
     name: 'Node',
-    level: '45%',
+    level: '60%',
   },
   {
     Icon: BsCircleFill,
-    name: 'Mongo',
-    level: '35%',
+    name: 'MongoDB',
+    level: '55%',
   },
   {
     Icon: BsCircleFill,
     name: 'Next',
-    level: '35%',
+    level: '55%',
   },
 ];
 
@@ -89,7 +89,7 @@ export const tools: Skill[] = [
   {
     Icon: BsCircleFill,
     name: 'Docker',
-    level: '40%',
+    level: '20%',
   },
   {
     Icon: BiGame,
@@ -117,10 +117,10 @@ export const courses: ICourses[] = [
     link: 'https://www.udemy.com/course/kurs-react-od-podstaw/',
   },
   {
-    author: 'Adam Hałasa',
-    title: 'React - kurs kompletny',
-    date: '02.2022',
-    link: 'https://tworcastron.pl/kursy/react-kurs-kompletny',
+    author: 'Jonas Schmedtmann',
+    title: 'NodeJS complete Bootcamp',
+    date: '10.2022',
+    link: 'https://www.udemy.com/certificate/UC-285022e8-e9c9-47ae-8270-69cc2709649b/',
   },
   {
     author: 'Maximilian Schwarzmüller',
@@ -144,6 +144,16 @@ export const courses: ICourses[] = [
 
 export const projects: IProject[] = [
   {
+    name: 'Natours',
+    description:
+      'Natours is a booking full-stack web application, where users can  purchase travel via bank card, create an account, log in and log out, with the  ability to reset their password and update their data (name, photo, and email  basically), with an improved user experience. An emailing feature is provided each time a user signup, attempts to reset the password, or purchases travel.',
+    image_path: '/images/natours.png',
+    deployed_url: 'https://tour-net.herokuapp.com/',
+    github_url: 'https://github.com/Karol-Zysk/Node-Typescript-Tours',
+    category: ['Node', 'MongoDB', 'TypeScript'],
+    key_techs: ['MongoDB', 'TypeScript', 'NodeJS', 'Express', 'Stripe'],
+  },
+  {
     name: 'Tusinek',
     description: 'Website Design for a popular Masurian inn',
     image_path: '/images/tusinek.png',
@@ -151,6 +161,16 @@ export const projects: IProject[] = [
     github_url: 'https://github.com/Karol-Zysk/Zajazd_Tusinek',
     category: ['React', 'TypeScript'],
     key_techs: ['React', 'TypeScript', 'NextJS', 'CSS-Modules'],
+  },
+  {
+    name: 'Tanie-Suple',
+    description:
+      'Project of Shop with cheap suplements , whey, pre-wokouts, fat-burners, creatine.',
+    image_path: '/images/tanie-suple.png',
+    deployed_url: 'https://tanie-suple-shop.vercel.app/',
+    github_url: 'https://github.com/Karol-Zysk/tanie-suple-shop',
+    category: ['React', 'NextJS', 'TypeScript', 'MongoDB'],
+    key_techs: ['React', 'TypeScript', 'PayPal', 'NextJS', 'Tailwind'],
   },
   {
     name: 'Lotto Simulator',
