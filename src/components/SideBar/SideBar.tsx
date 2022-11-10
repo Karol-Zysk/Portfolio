@@ -80,8 +80,8 @@ const SideBar = () => {
         <div className='my-5 mx-auto flex w-10/12 justify-around   text-violet md:w-full'>
           <a
             aria-label='Mail'
-            href='/assets/Karol_Zyśk_-_Frontend_Developer.pdf'
-            download='Karol_Zyśk_-_Frontend_Developer.pdf'
+            href='/assets/Karol_Zyśk_Junior_Fullstack_CV.pdf'
+            download='Karol_Zyśk_Junior_Fullstack_CV.pdf'
             className='text-md mr-auto ml-auto flex items-center  rounded-3xl border-2  border-violet  px-3 py-1 font-semibold duration-100 ease-linear hover:scale-105 '
           >
             Resume
