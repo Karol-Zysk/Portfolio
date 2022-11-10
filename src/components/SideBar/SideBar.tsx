@@ -42,7 +42,7 @@ const SideBar = () => {
         <h3 className='my-3 font-kaushan text-3xl font-medium'>
           <span className='text-violet '>Karol </span> Zyśk
         </h3>
-        <p className='my-3  px-2 py-1 text-lg  '>Junior Frontend Developer</p>
+        <p className='my-3  px-2 py-1 text-lg  '>Junior Fullstack Developer</p>
 
         <div
           className='dark:bg-black-500 my-5 bg-gray-200 py-4 dark:bg-dark-200 '

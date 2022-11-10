@@ -13,9 +13,9 @@ class MyDocument extends Document {
           />
           <meta
             name='description'
-            content='Page of Frontend Developer Wannabe'
+            content='Page of Fullstack Developer Wannabe'
           />
-          <meta name='keywords' content=' Frontend Developer Portfolio' />
+          <meta name='keywords' content=' Fullstack Developer Portfolio' />
         </Head>
         <body className='bg-gradient-to-r from-violet to-blue-600 dark:from-dark-500 dark:to-dark-700 dark:text-white'>
           <Main />

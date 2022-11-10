@@ -18,10 +18,10 @@ const About: NextPage = () => {
       exit='exit'
     >
       <Head>
-        <title>Frontend Developer | portfolio |Karol Zyśk</title>
+        <title>Fullstack Developer | portfolio |Karol Zyśk</title>
       </Head>
       <h5 className='my-3 text-lg font-medium'>
-        Frontend Developer with a passion to Create and a willingness to Learn{' '}
+        Fullstack Developer with a passion to Create and a willingness to Learn{' '}
       </h5>
       <div
         className='mt-4 flex-grow bg-gradient-to-r from-white to-gray-100  p-4 dark:from-dark-100 dark:to-dark-200'
